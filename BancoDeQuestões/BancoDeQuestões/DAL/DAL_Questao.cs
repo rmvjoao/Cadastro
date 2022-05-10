@@ -85,19 +85,7 @@ namespace BancoDeQuestões.DAL
                    
                 }
                 return "ok";
-
-
-
-
-
-
-
-
-                //var update = Builders<Questao>.Update
-                //    .Set("flag", 1);
-
-                //colecao.UpdateOne(filtro, update);
-                //return "ok";
+                                
             }
             catch (Exception ex)
             {
