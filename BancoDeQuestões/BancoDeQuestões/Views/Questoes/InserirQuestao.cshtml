@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "InserirQuestao";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content area -->
+<div class="content">
+
+    <!-- Form inputs -->
+    <div class="card">
+        <div class="card-header header-elements-inline">
+            <h5 class="card-title">Cadastre sua questão</h5>
+            <div class="header-elements">
+                <div class="list-icons">
+                    <a class="list-icons-item" data-action="collapse"></a>
+                    @*<a class="list-icons-item" data-action="reload"></a>
+                    <a class="list-icons-item" data-action="remove"></a>*@
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body">
+            @*<p class="mb-4">Examples of standard form controls supported in an example form layout. Individual form controls automatically receive some global styling. All textual <code>&lt;input></code>, <code>&lt;textarea></code>, and <code>&lt;select></code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing. Labels in horizontal form require <code>.col-form-label</code> class.</p>*@
+
+            <form action="#">
+                <fieldset class="mb-3">
+                    <legend class="text-uppercase font-size-sm font-weight-bold">preencha Todos os campos.</legend>
+
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-2">PERGUNTA</label>
+                        <div class="col-lg-10">
+                            <textarea rows="3" cols="3" class="form-control" id="txtPergunta" placeholder="Escreva aqui sua pergunta"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-2">Alternativa (A)</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="txtCorreta">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-2">Alternativa (B)</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="txtAltB">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-2">Alternativa (C)</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="txtAltC">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-2">Alternativa (D)</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="txtAltD">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-2">Alternativa (E)</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="txtAltE">
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <div class="text-right">
+                    @*<button type="submit" class="btn btn-primary">Submit <i class="icon-paperplane ml-2"></i></button>*@
+                    <input type="button" class="btn btn-primary" value="SALVAR" id="btnSalvarQuestao">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /form inputs -->
+
+</div>
+<!-- /content area -->
