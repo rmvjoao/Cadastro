@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Simple login form -->
+<form>
+    <div class="panel panel-body login-form">
+
+        <div id="aviso"class="text-center">
+            
+        </div>
+
+        <div class="text-center">
+            <div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
+            <h5 class="content-group">Faça Login na sua conta <small class="display-block">Informe seus dados</small></h5>
+        </div>
+
+        <div class="form-group has-feedback has-feedback-left">
+            <input type="text" class="form-control" id="txtEmailLogin" placeholder="E-mail">
+            <div class="form-control-feedback">
+                <i class="icon-user text-muted"></i>
+            </div>
+        </div>
+
+        <div class="form-group has-feedback has-feedback-left">
+            <input type="password" class="form-control" id="txtSenhaLogin" placeholder="Senha" autocomplete="on">
+            <div class="form-control-feedback">
+                <i class="icon-lock2 text-muted"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="button" class="btn btn-primary btn-block" value="Entrar" id="btnLogin">
+        </div>
+
+        <div class="text-center">
+            <a href="@Url.Action("Cadastro", "Home")">Registre-se aqui.</a>
+
+        </div>
+    </div>
+</form>
+<!-- /simple login form -->
